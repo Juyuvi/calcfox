@@ -1,0 +1,2 @@
+# calcfox
+ Calculadora em Qt.
