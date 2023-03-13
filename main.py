@@ -5,6 +5,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 from PyQt5.Qt import Qt
 
+import os
+
+icon_path = os.path.join(os.path.dirname(__file__), r'fox.png')
 
 class Ui_janela(object):
     def setupUi(self, janela):
@@ -23,7 +26,7 @@ class Ui_janela(object):
         janela.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         janela.setWindowTitle("CalcFox")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("C:/Users/noone/Desktop/dev/python/calculadora/fox.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(icon_path), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         janela.setWindowIcon(icon)
         janela.setStatusTip("")
         janela.setStyleSheet("QPushButton:hover{background: rgba(0, 194, 255, 0.12)}")
