@@ -30,9 +30,9 @@ def clearing(targetUI):
     targetUI.calcscreen.setText(calc.showDisplay())
 
 def calculate(targetUI):
-
-    calc.calculate()
-    targetUI.calcscreen.setText(calc.showDisplay())
+    if (calc.display):
+        calc.calculate()
+        targetUI.calcscreen.setText(calc.showDisplay())
 
 def addingComma(targetUI):
     calc.addComma()
