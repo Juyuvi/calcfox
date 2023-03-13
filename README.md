@@ -3,4 +3,4 @@
  
  Minha primeira aplicação utilizando PyQt.
  
- ![](https://imgur.com/FOzT8fs)
+ ![](https://imgur.com/FOzT8fs.png)
