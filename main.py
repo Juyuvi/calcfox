@@ -168,7 +168,7 @@ class Ui_janela(object):
         self.button4number.setDefault(True)
         self.button4number.setFlat(True)
         self.button4number.setObjectName("button4number")
-        self.buttoncomma = QtWidgets.QPushButton(self.centralwidget)
+        self.buttoncomma = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: addingComma(ui))
         self.buttoncomma.setGeometry(QtCore.QRect(210, 220, 71, 71))
         font = QtGui.QFont()
         font.setPointSize(14)
@@ -381,10 +381,7 @@ class Ui_janela(object):
         self.calcscreen.setText(_translate("janela", "0"))
 
 
-    def keyPressEvent(self, event):
-        super(MainWindow, self).keyPressEvent(event)
-        print('pressed from MainWindow: ', event.key())
-        self.keyPressed.emit(event)
+
 
 
 if __name__ == "__main__":
