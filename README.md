@@ -5,4 +5,4 @@
  
  ![](https://imgur.com/FOzT8fs.png)
 
-A interface original era planejada para ser em Tkinter (Me arrependi).
+A interface original era planejada para ser em Tkinter (me arrependi).
